@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSAKA SNEAKERS</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: left;
+            align-items: row;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-style: italic;
+            font-family: "Book Antiqua", serif;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        /* Home Page */
+        #home {
+            background-image: url('C:/Users/HP/OneDrive/Desktop/Sneakers/Jordan 1 .jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #home .description-box {
+            width: 40%;
+            height: 40%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #home p {
+            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        #shop-button {
+            padding: 10px 20px;
+            background-color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: "Times New Roman", Times, serif;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #shop-button:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Collection Page */
+        #collection {
+            padding: 50px;
+        }
+
+        #collection h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        #sneaker-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .sneaker-item {
+            text-align: center;
+        }
+
+        .sneaker-item img {
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+        }
+
+        .sneaker-item p {
+            font-size: 16px;
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .purchase-btn {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* About Us Page */
+        #about {
+            background-color: white;
+            padding: 50px;
+            text-align: left;
+        }
+
+        #about h2 {
+            font-size: 25px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        #about p {
+            font-size: 20px;
+            color: black;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Page Section -->
+    <section id="home">
+        <div class="description-box">
+            <p>Step into the world of Mosaka Sneakers, where style meets comfort in every step. Discover our curated collection of top-notch sneakers designed to elevate your look and keep you moving with confidence.</p>
+            <a id="shop-button" href="#collection">Shop Sneakers</a>
+        </div>
+    </section>
+
+    <!-- Collection Page Section -->
+    <section id="collection">
+        <h2>Our Sneaker Collection</h2>
+        <div id="sneaker-grid">
+            <div class="sneaker-item">
+                <img src="C:\Users\HP\OneDrive\Desktop\Sneakers\Sneaker 1 .jpeg" alt="Sneaker 1">
+                <p>Price: Ksh2800 | Size: 42,43,44,45</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 2.jpeg" alt="Sneaker 2">
+                <p>Price: Ksh2800 | Size: 42,43,44,45</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 3 .jpeg" alt="Sneaker 3">
+                <p>Price: Ksh2300 | Size: 36,37,38,39,40</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 4 .jpeg" alt="Sneaker 4">
+                <p>Price: Ksh2850 | Size: 36,37,38,39,40</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 5 .jpeg" alt="Sneaker 5">
+                <p>Price: Ksh2850 | Size: 36,37,38,39,40</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 6 .jpeg" alt="Sneaker 6">
+                <p>Price: Ksh2850 | Size: 36,37,38,39,40</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 7 .jpeg" alt="Sneaker 7">
+                <p>Price: Ksh2850 | Size: 36,37,38,39,40</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 8 .jpeg" alt="Sneaker 8">
+                <p>Price: Ksh2850 | Size: 36,37,38,39,40</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 9 .jpeg" alt="Sneaker 9">
+                <p>Price: Ksh2300 | Size: 40,41,42,43,44</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 10 .jpeg" alt="Sneaker 10">
+                <p>Price: Ksh3200 | Size: 40,41,42,43,44</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 11 .jpeg" alt="Sneaker 11">
+                <p>Price: Ksh3500 | Size: 40,41</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="C:/Users/HP/OneDrive/Desktop/Sneakers/Sneaker 12 .jpeg" alt="Sneaker 12">
+                <p>Price: Ksh2300 | Size: 36,37,38</p>
+                <button class="purchase-btn" onclick="purchase()">Purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Page Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Mosaka Sneakers!<br>
+        </p>  Find us at Ronald Ngala Street, Tuskys Magic business, wing B, first floor, shop Bm39, Nairobi, Kenya, where sneaker enthusiasts, casual shoppers, and collectors can explore our wide range of top-quality sneakers. Our store is open Monday to Saturday from 9am to 6pm EAT.<br>
+           For any inquiries, feel free to reach out to us via phone at +254-123-456-789 or email us at info@mosakasneakers.com.</p>
+    </section>
+
+    <!-- JavaScript for Purchase Button -->
+    <script>
+        function purchase() {
+            alert("Please call this number before making any transactions: 0110419577. If payment is by cash, call or text this number (0110419577) to organize for meet-ups.");
+        }
+    </script>
+</body>
+</html>
